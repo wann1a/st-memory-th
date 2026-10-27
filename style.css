@@ -1,0 +1,75 @@
+.mth-root .mth-status {
+  border: 1px solid #b59ad8;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin: 8px 0 10px;
+  line-height: 1.6;
+  background: rgba(20, 16, 28, 0.55);
+}
+.mth-root .mth-status .mth-line-ok { color: #3ddc84; }
+.mth-root .mth-status .mth-line-err { color: #ff6b81; }
+.mth-root .mth-status .mth-line-busy { color: #f5c26b; }
+
+.mth-root .mth-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.mth-root .mth-btn {
+  border: 1px solid #b59ad8;
+  border-radius: 12px;
+  padding: 10px 8px;
+  background: rgba(20, 16, 28, 0.55);
+  color: inherit;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.95em;
+}
+.mth-root .mth-btn:hover { background: rgba(181, 154, 216, 0.2); }
+.mth-root .mth-btn.mth-primary { border-color: #f0c6e0; }
+.mth-root .mth-btn.mth-wide { grid-column: 1 / -1; }
+.mth-root .mth-btn:disabled { opacity: 0.5; cursor: wait; }
+
+.mth-root .mth-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 8px 0;
+}
+.mth-root .mth-row input[type="number"],
+.mth-root .mth-row select { max-width: 55%; }
+.mth-root textarea.mth-prompt { width: 100%; min-height: 120px; }
+
+/* โมดอล */
+.mth-modal-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+.mth-modal {
+  width: min(720px, 100%);
+  max-height: 90vh;
+  overflow: auto;
+  background: var(--SmartThemeBlurTintColor, #1c1c1f);
+  border: 1px solid #b59ad8;
+  border-radius: 14px;
+  padding: 14px;
+}
+.mth-modal h3 { margin: 0 0 10px; }
+.mth-modal textarea { width: 100%; min-height: 90px; }
+.mth-modal pre { white-space: pre-wrap; word-break: break-word; }
+.mth-modal .mth-item {
+  border: 1px solid rgba(181, 154, 216, 0.5);
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+.mth-modal .mth-item small { opacity: 0.7; display: block; margin-bottom: 4px; }
+.mth-modal .mth-actions { display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
